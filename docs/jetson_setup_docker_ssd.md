@@ -4,17 +4,18 @@
 
 ### 1. check docker status
 
-```bash
-docker info
-```
+* 아래 명령으로 docker info를 확인한다.
+  ```bash
+  docker info
+  ```
 
 * `permission denied while trying to connect to the docker API at unix:///var/run/docker.sock`
 * 권한 문제: 매번 sudo 사용하는대신 `USER`를 docker group에 추가
 
-    ```bash
-    sudo usermod -aG docker $USER
-    newgrp docker
-    ```
+  ```bash
+  sudo usermod -aG docker $USER
+  newgrp docker
+  ```
 
 <!-- ```bash
 $ sudo nvidia-ctk runtime configure --runtime=docker

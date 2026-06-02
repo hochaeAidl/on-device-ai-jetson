@@ -39,7 +39,7 @@
   ![fig9](./images/sdk_9.png)
 * SDK `Step 01`
   ![fig10](./images/sdk_10.png)
-** SDK `Step 01`: `Target Hardware`를 진행 -> `Jetson Orin Nano modules`
+  * SDK `Step 01`: `Target Hardware`를 진행 -> `Jetson Orin Nano modules`
   ![fig11](./images/sdk_11.png)
 * SDK `Step 02`: `TARGET COMPONENTS` 모두를 선택, `lincense`와 `Download` 선택
   ![fig12](./images/sdk_12.png)

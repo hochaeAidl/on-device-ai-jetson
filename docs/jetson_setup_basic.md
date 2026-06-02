@@ -2,11 +2,12 @@
 
 SDK manager를 통하여 기본 tool과 SDK를 install한 경우에 대한 setup guide를 정리한다.
 
-## 1. PC에서 powershell을 열고 아래 명령으로 jetson board에 login 한다.
+## 1. Jetson에 SSH을 통해 login 
 
-```powershell
-ssh –Y aidl@jetson-000.local
-```
+* powershell을 열고 아래 명령으로 jetson board에 login 한다.
+  ```powershell
+  ssh –Y aidl@jetson-000.local
+  ```
 
 * 처음 연결 시 연결 진행 여부를 묻는 message가 출력됨. `yes`를 입력하고 진행
 * `host name으로 연결이 안될 경우 ip로 진행한다.

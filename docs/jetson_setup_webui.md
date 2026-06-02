@@ -5,7 +5,13 @@
 Open WebUI는 Docker를 이용해 실행하므로 별도의 install 과정은 없이 다음 명령을 수행하면 된다.
 
 ```bash
-docker run -d --network=host -v open-webui:/app/backend/data -e OLLAMA_BASE_URL=http://127.0.0.1:11434 --name open-webui --restart always ghcr.io/open-webui/open-webui:main
+docker run -d \
+  --network=host \
+  -v open-webui:/app/backend/data \
+  -e OLLAMA_BASE_URL=http://127.0.0.1:11434 \
+  --name open-webui \
+  --restart always \
+  ghcr.io/open-webui/open-webui:main
 ```
 
 * `run`: 새로운 docker container를 생성하고 실행하라는 명령어

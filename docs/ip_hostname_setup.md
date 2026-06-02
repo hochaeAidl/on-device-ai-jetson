@@ -19,19 +19,23 @@ ssh terminal 환경에서 `nmcli`로 wired connection IP manual setup 방법
 `xx`: 고정 ip 변호로 수정하고 아래 명령을 수행
 
 ```bash
-sudo nmcli c modify "Wired connection 1" ipv4.addresses 10.10.141.xx/24 ipv4.gateway 10.10.141.254
+sudo nmcli c modify "Wired connection 1" \
+    ipv4.addresses 10.10.141.xx/24 \
+    ipv4.gateway 10.10.141.254
 ```
 
 ### 3. 할당 방식을 '수동(manual)'으로 변경
 
 ```bash
-sudo nmcli c modify "Wired connection 1" ipv4.method manual
+sudo nmcli c modify "Wired connection 1" \
+    ipv4.method manual
 ```
 
 ### 4. DNS도 같이 설정해주는 것이 좋습니다 (안 그러면 이름 해석이 안 될 수 있음)
 
 ```bash
-sudo nmcli c modify "Wired connection 1" ipv4.dns "8.8.8.8,8.8.4.4"
+sudo nmcli c modify "Wired connection 1" \
+    ipv4.dns "8.8.8.8,8.8.4.4"
 ```
 
 ### 5. 설정 적용

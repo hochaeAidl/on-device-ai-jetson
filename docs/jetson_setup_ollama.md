@@ -2,25 +2,28 @@
 
 ## 1. Install Ollama
 
-```bash
-curl -fsSL https://ollama.com/install.sh | sh
-```
+* 아래 명열으로  ollama를 install 한다.
+  ```bash
+  curl -fsSL https://ollama.com/install.sh | sh
+  ```
 
 * curl (Client URL): 터미널(CLI) 환경에서 URL을 이용해 서버와 데이터를 주고받거나, 서버에 특정 기능(요청)을 수행하도록 명령하는 도구
 * `-fsSL` : option, `에러가 나면 조용히 실패하고, 진행은 숨기되, 올바른 주소로 자동 이동해서 데이터를 가져와`
 
-> 1. `f`: `fail`을 무시
-> 2. `s`: `silence`, 진행 상황 숨기기
-> 3. `S`: `Show`, 치명적인 에러 보이기
-> 4. `L`: `Location`, redirect 주소 추적
+  1. `f`: `fail`을 무시
+  2. `s`: `silence`, 진행 상황 숨기기
+  3. `S`: `Show`, 치명적인 에러 보이기
+  4. `L`: `Location`, redirect 주소 추적
 
 * `|`: `pipe`, 읽어온 data를 다음 명령 `sh`에 전달하여 수행
 
 ## 2. Pull a model: donwload model
 
-```bash
-ollama pull gemma3:4b
-```
+* 아래 명령으로 `gemma3:4b` model을 download한다.
+
+  ```bash
+  ollama pull gemma3:4b
+  ```
 
 ## 3. 현재 Swap 메모리 확인하기
 
