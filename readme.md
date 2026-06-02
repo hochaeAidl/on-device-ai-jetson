@@ -4,7 +4,7 @@
 
 ## 배료 자료
 
-* [codeXpert](codexpert.ac)에 login하고 과정을 선택하고 과정참가를 선택하여 **배포자료**를 다운 받는다.
+[**codeXpert**](codexpert.ac) 과정참가 후 다운 받는다.
 
 ## 수업 진도에 맞추어 아래 link를 참조하여 jetson board를 setup한다.
 
@@ -19,3 +19,5 @@
 ### 5. [Jetson Open WebUI](./docs/jetson_setup_webui.md)
 
 ### 6. [ip setup on terminal](./docs/ip_hostname_setup.md)
+
+### 7. [Jetson SDK image flashing](./docs/jeton_sdk_manager.md)

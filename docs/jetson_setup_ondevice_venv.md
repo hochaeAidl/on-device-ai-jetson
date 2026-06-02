@@ -91,6 +91,6 @@ pip install --no-cache torchaudio-2.3.0+952ea74-cp310-cp310-linux_aarch64.whl
 pip install ultralytics 'numpy==1.26.4' 'torch==2.3'
 ```
 
-## 💡 tip
+<!-- ## 💡 tip
 
-`pytorch whl` file은 NVIDA [Pytorch for Jetson](https://forums.developer.nvidia.com/t/pytorch-for-jetson/72048)에서 최신 version을 받은 것임.
+`pytorch whl` file은 NVIDA [Pytorch for Jetson](https://forums.developer.nvidia.com/t/pytorch-for-jetson/72048)에서 최신 version을 받은 것임. -->
