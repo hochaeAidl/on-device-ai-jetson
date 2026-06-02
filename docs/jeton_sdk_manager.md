@@ -79,4 +79,56 @@
 * SDK `Step 04`
   ![fig22](./images/sdk_22.png)
 
+## 3. OEM setup 마무리
 
+* SDK Installation이 끝나면 전원과 rescue mode 점퍼와 usb를 제거한다.
+* 키보드, 마우스, 모니터를 연결하고 전원을 인가하여 정상 부팅을 진행한다.
+
+* `aidl` user로 login하고 초기 setup을 진행한다.
+* `Power Mode`를 `max`로 바꾼다.
+* network setup을 진행한다.
+  * `ifconfig` 명령으로 ip를 확인하고 기록한다.
+* 아래 명령으로 `hostname`을 `jetson-xxx`로 수정한다.
+  * `xxx`는 본인의 수강 번호를 세자리로 표현. 예: 7번 --> `jetson-007`
+  ```bash
+  sudo hostnamectl set-hostname jetson-007
+  ```
+* `/etc/hosts` file안의 정보도 수정
+  * 수정 전
+    ```Plaintext
+    127.0.0.1   localhost
+    127.0.1.1   ubuntu
+    ```
+
+  * 수정 후
+    ```Plaintext
+    127.0.0.1   localhost
+    127.0.1.1   jetson-007
+    ```
+* 다음 명령으로 jetson을 poweroff한 뒤 전원을 분리한다.
+
+  ```bash
+  sudo poweroff
+  ```
+
+* jetson board를 `Headless` mode로 전환한다.
+  * 키보드, 마우스, 모니터를 분리한다.
+
+## 4. 전원을 연결하고 ssh로 login하자
+
+* 아래 명령을 powershell에서 실항하여 ssh로 login해 보자
+  ```Poswershell
+  ssh -Y aidl@jetson-007
+  ```
+
+  * 연결이 안되면 기록해둔 IP로 연결해 보자
+  ```Powershell
+  ssh -Y aidl@192.168.1.59
+  ```
+* 처음 연결하면 연결진행 여부를 묻는다. `yes`하고 login 진행
+* passwd를 입력하고 login 한다.
+* 아래 명령으로 ubuntu를 update한다.
+  ```bash
+  sudo apt update
+  sudo apt upgrade
+  ```
