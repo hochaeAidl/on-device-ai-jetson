@@ -72,8 +72,13 @@
   ![fig18](./images/sdk_18.png)
 * SDK `Step 03`: `Download only` 를 unmark 하고 진행
   ![fig19](./images/sdk_19.png)
-* `SDK components` install 시작 전에 확인 창이 뜬다. `Install`을 선택하고 진행
+* com port 를 이용하여 jetson b'd 에 login한다. (연결 방법은 [여기]()를 참고한다.)
+  * jetson b'd의 ip를 확인한다.
+* `SDK components` install 시작 전에 확인 창이 뜬다.
   ![fig20](./images/sdk_20.png)
+* connection을 `USB`에서 `Wthernet`으로 바꾸고 확인한 ip를 적어 준다.
+  ![fig20-1](./images/sdk_eth_01.png)
+* `Install`을 선택하고 진행
 * `verifying Jetson board` 후 진행 됨
   ![fig21](./images/sdk_21.png)
 * SDK `Step 04`
