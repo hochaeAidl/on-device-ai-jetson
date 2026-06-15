@@ -10,6 +10,24 @@
     wsl --install
     ```
 
+  * 아래그림과 같이 진행이 멈추는 경우 아래 명령을 powershell에서 관리자 권한으로 실행한다.
+
+    ```powershell
+    # 가상 머신 플랫폼 기능 활성화
+    dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+    # Linux용 Windows 하위 시스템 기능 활성화
+    dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+    ```
+
+    ![wsl_hu](./images/wsl_hu.png)
+
+  * system을 restart한다.
+  * 다시한번 wsl install을 실행하고 배포판 리스트가 출력되면 아래 명령으로 `Ubuntu`를 install한다.
+ 
+    ```powershell
+    wsl --install -d Ubuntu
+    ```
+    
 * WSL 환경하에서 USB port on/off를 진행하며 이 때 powershell을 사용한다.
   * powershell은 가장 최신인 7.6.x를 install 하기를 추천한다.
   * 제공한 `.msi`를 이용하여 설치 후 환경변수 `PATH`에 이 folder를 추가하고 우선권을 최상으로 한다.
