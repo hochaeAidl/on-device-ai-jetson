@@ -19,7 +19,7 @@
     dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
     ```
 
-    ![wsl_hu](./images/wsl_hu.png)
+    ![wsl_hu](./images/wsl_hup.png)
 
   * system을 restart한다.
   * 다시한번 wsl install을 실행하고 배포판 리스트가 출력되면 아래 명령으로 `Ubuntu`를 install한다.
