@@ -108,7 +108,7 @@
 * SDK `Step 03`: `Download only` 를 unmark 하고 진행
 
   ![fig19](./images/sdk_19.png)
-* com port 를 이용하여 jetson b'd 에 login한다. (연결 방법은 [여기](./images/jetson_usb_login.md)를 참고한다.)
+* com port 를 이용하여 jetson b'd 에 login한다. (연결 방법은 [여기](./jetson_usb_login.md)를 참고한다.)
   * jetson b'd의 ip를 확인한다.
 * `SDK components` install 시작 전에 확인 창이 뜬다.
 
