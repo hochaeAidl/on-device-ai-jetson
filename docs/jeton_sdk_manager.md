@@ -108,32 +108,32 @@
       ```
 
 * `APX driver`: 보드 연결시 없으면 아래와 같이 popup이 뜬다.
-
- ![APX](./images/APX_driver.png)
+  ![APX](./images/APX_driver.png)
+  
   * SDK manager 종료하고 APX driver를 인스톨한다.
-  * 제공한 `zadig-2.9.exe`(APX driver installer)를 실행 -> 추가정보 -> 실행 -> 인스톨
-  * SDK manager 다시 실행
-    
+   * 제공한 `zadig-2.9.exe`(APX driver installer)를 실행 -> 추가정보 -> 실행 -> 인스톨
+   * SDK manager 다시 실행
+---
 * SDK `Step 01`: 보드 연결을 자동으로 확인
 
-  ![fig15](./images/sdk_15.png)
+    ![fig15](./images/sdk_15.png)
 
   * 보드 연결시 APX driver가 없으면 아래와 같이 popup이 뜬다.
 
-   ![APX](./images/APX_driver.png)
+     ![APX](./images/APX_driver.png)
 
     * SDK manager 종료하고 APX driver를 인스톨한다.
     * 제공한 `zadig-2.9.exe`(APX driver installer)를 실행 -> 추가정보 -> 실행 -> 인스톨
     * SDK manager 다시 실행
     
-* SDK `Product` selection: 보드 연결이 되면 자동으로 선택 popup이 뜬다
-  * `Jeson Orin Nano[8GB developer kit version]` 선택
+ * SDK `Product` selection: 보드 연결이 되면 자동으로 선택 popup이 뜬다
+   * `Jeson Orin Nano[8GB developer kit version]` 선택
   
   ![fig16](./images/sdk_16.png)
-* SDK `Step 02`: `Lincese` 만 check하고 진행
-  * 주의 사항: `TARGET COMPONENT` 전체 선택 확인 필수
+ * SDK `Step 02`: `Lincese` 만 check하고 진행
+   * 주의 사항: `TARGET COMPONENT` 전체 선택 확인 필수
   
-  ![fig17](./images/sdk_17.png)
+   ![fig17](./images/sdk_17.png)
 * SDK `OEM Configuration` & `Storage`: 초기 login 필요, 반드시 아래와 같이 지정한다.
   * New Username: `aidl`
   * New Password: `will`
