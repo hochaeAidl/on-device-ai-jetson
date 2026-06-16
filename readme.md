@@ -24,3 +24,15 @@
 ### 5. [Jetson Open WebUI](./docs/jetson_setup_webui.md)
 
 ### 6. [KCCI ip setup on terminal](./docs/ip_hostname_setup.md)
+
+---
+
+## CNN models
+
+### 1. [VGG](https://medium.com/@msmapark2/vgg16-%EB%85%BC%EB%AC%B8-%EB%A6%AC%EB%B7%B0-very-deep-convolutional-networks-for-large-scale-image-recognition-6f748235242a)
+
+### 2. [Inception](https://wikidocs.net/164794)
+
+### 3. [ResNet](https://stevenkim1217.tistory.com/entry/ResNet-%EA%B0%9C%EB%85%90-%EC%A0%95%EB%A6%AC)
+
+### 4. [DenseNet](https://velog.io/@lighthouse97/DenseNet%EC%9D%98-%EC%9D%B4%ED%95%B4)
