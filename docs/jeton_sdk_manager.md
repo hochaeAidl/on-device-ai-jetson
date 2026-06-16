@@ -87,9 +87,36 @@
   * USB port 연결
 
     ![fig_jetson](./images/jetson_rescue.png)
+
+* Tool 설치
+
+ * [usbip-win](https://github.com/dorssel/usbipd-win/releases): USB로 IP 연결 시 사용
+   * 제공한 `usbipd-win_5.3.0_x64.msi`를 실행
+   * 인스톨 후 아래 명령으로 확인해 보자
+
+     ```powershell
+     usbipd list
+     ```
+
+* `APX driver`: 보드 연결시 없으면 아래와 같이 popup이 뜬다.
+
+ ![APX](./images/APX_driver.png)
+  * SDK manager 종료하고 APX driver를 인스톨한다.
+  * 제공한 `zadig-2.9.exe`(APX driver installer)를 실행 -> 추가정보 -> 실행 -> 인스톨
+  * SDK manager 다시 실행
+    
 * SDK `Step 01`: 보드 연결을 자동으로 확인
 
   ![fig15](./images/sdk_15.png)
+
+  * 보드 연결시 APX driver가 없으면 아래와 같이 popup이 뜬다.
+
+   ![APX](./images/APX_driver.png)
+
+    * SDK manager 종료하고 APX driver를 인스톨한다.
+    * 제공한 `zadig-2.9.exe`(APX driver installer)를 실행 -> 추가정보 -> 실행 -> 인스톨
+    * SDK manager 다시 실행
+    
 * SDK `Product` selection: 보드 연결이 되면 자동으로 선택 popup이 뜬다
   * `Jeson Orin Nano[8GB developer kit version]` 선택
   
