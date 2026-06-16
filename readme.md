@@ -31,8 +31,8 @@
 
 ### 1. [VGG](https://medium.com/@msmapark2/vgg16-%EB%85%BC%EB%AC%B8-%EB%A6%AC%EB%B7%B0-very-deep-convolutional-networks-for-large-scale-image-recognition-6f748235242a)
 
-### 2. [Inception]([https://wikidocs.net/164794)](https://arxiv.org/pdf/1409.4842) / [기본 개념](https://arxiv.org/pdf/1409.4842)
+### 2. [Inception](https://arxiv.org/pdf/1409.4842) / [기본 개념](https://arxiv.org/pdf/1409.4842)
 
-### 3. [ResNet]([https://stevenkim1217.tistory.com/entry/ResNet-%EA%B0%9C%EB%85%90-%EC%A0%95%EB%A6%AC](https://arxiv.org/pdf/1512.03385)
+### 3. [ResNet](https://arxiv.org/pdf/1512.03385)
 
-### 4. [DenseNet]([https://velog.io/@lighthouse97/DenseNet%EC%9D%98-%EC%9D%B4%ED%95%B4](https://arxiv.org/pdf/1608.06993)
+### 4. [DenseNet](https://arxiv.org/pdf/1608.06993)
