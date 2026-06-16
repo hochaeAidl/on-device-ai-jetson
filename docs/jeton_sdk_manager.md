@@ -5,6 +5,7 @@
  [1. SDK Manager](#1-sdk-manager-실행)
  
  [2. SSD flashing](#2-ssd-flashing)
+ [3. Troubleshooting](./trouble_shooting.md)
 
 ## 주의 사항
 
