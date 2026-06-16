@@ -1,5 +1,11 @@
 # Jetson Image flashing on SSD w/ NVIDIA SDK manager
 
+## 목차
+
+ [1. SDK Manager](#1-sdk-manager-실행)
+ 
+ [2. SSD flashing](#2-ssd-flashing)
+
 ## 주의 사항
 
 * NVIDIA SDK nanager는 기본적으로 linux 기반의 tool이다. 따라서 windows system에서도 WSL을 사용한다.
@@ -35,7 +41,9 @@
 * Downloading 과 install을 동시 진행할 경우 시간이 많이 걸린다.
   * 수업에서는 먼저 Downloading을 진행하고 시차를 두고 install을 진행한다.
 
-## 1. SDK manager 실행하고 login 후 Download 진행
+## 1. SDK manager 실행
+
+ SDK manager 실행하고 login 후 Download 진행
 
 * 실행 초기화면
 
@@ -89,14 +97,13 @@
     ![fig_jetson](./images/jetson_rescue.png)
 
 * Tool 설치
+  * [usbip-win](https://github.com/dorssel/usbipd-win/releases): USB로 IP 연결 시 사용
+    * 제공한 `usbipd-win_5.3.0_x64.msi`를 실행
+    * 인스톨 후 아래 명령으로 확인해 보자
 
- * [usbip-win](https://github.com/dorssel/usbipd-win/releases): USB로 IP 연결 시 사용
-   * 제공한 `usbipd-win_5.3.0_x64.msi`를 실행
-   * 인스톨 후 아래 명령으로 확인해 보자
-
-     ```powershell
-     usbipd list
-     ```
+      ```powershell
+      usbipd list
+      ```
 
 * `APX driver`: 보드 연결시 없으면 아래와 같이 popup이 뜬다.
 
