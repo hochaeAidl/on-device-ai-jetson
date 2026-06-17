@@ -30,7 +30,7 @@ sudo apt install python3.10-venv
 * activate `venv`
 
     ```bash
-    source ~/work/venv/bin/acitvate
+    source ~/work/venv/bin/activate
     ```
 
     **prompt**가 아래와 같이 바뀌었는지 확인
