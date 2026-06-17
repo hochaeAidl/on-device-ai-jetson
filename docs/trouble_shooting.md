@@ -21,12 +21,12 @@
     * gateway와 DNS 설정을 다음 절차에 따라 수정하여 주어야 한다.
 
       ```bash
-      # IP 할당을 수동으로 수정
-      sudo nmcli connection modify "Wired connection 1" ipv4.method manual
       # IP와 gateway 설정: xx 자리를 자신의 ip로 설정
       sudo nmcli connection modify "Wired connection 1" ipv4.addresses 10.10.15.xx/24 ipv4.gateway 10.10.15.254
       # DNS 설정
       sudo nmcli connection modify "Wired connection 1" ipv4.dns "8.8.8.8,8.8.4.4"
+      # IP 할당을 수동으로 수정
+      sudo nmcli connection modify "Wired connection 1" ipv4.method manual
       # 설정 적용
       sudo nmcli connection up "Wired connection 1"
       ```
